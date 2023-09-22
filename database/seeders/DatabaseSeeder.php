@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $this->call(GradoSeeder::class);
-        Alumno::factory(20)->create();
+        Alumno::factory(200)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

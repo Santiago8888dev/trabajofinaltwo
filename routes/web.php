@@ -1,6 +1,7 @@
 <?php
 
-use App\Livewire\Crud\Index;
+use App\Livewire\AlumnoCreate;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,5 +14,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
     // Cambia la ruta y apunta directamente al componente Livewire Index
-    Route::get('/crud', Index::class)->name('crud.index');
+
 });
+
+Route::livewire('/alumnos', AlumnoCreate::class);
