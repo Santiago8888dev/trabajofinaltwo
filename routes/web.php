@@ -18,3 +18,5 @@ Route::middleware([
 });
 
 Route::livewire('/alumnos', AlumnoCreate::class);
+// Route::livewire('/cr', AlumnoCreate::class);
+

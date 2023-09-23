@@ -9,6 +9,7 @@ class Alumno extends Model
 {
     use HasFactory;
     protected $guarded =[];
+    protected $table = 'alumnos';
 
     public function grado()
     {
